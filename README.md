@@ -78,3 +78,15 @@ This project targets Retail API `12.0.1` and uses an original implementation.
 
 - `ChatEaseDB` (account-wide)
 - `ChatEaseCharDB` (per-character overrides)
+
+## License
+
+This project is licensed under `ChatEase Attribution License 1.0`.
+
+Any redistributed or modified version must clearly credit:
+
+- Original project: `ChatEase`
+- Original author: `布兰卡德-太古龙`
+- Original repository: `https://github.com/Beneic/chatease`
+
+Use [NOTICE](NOTICE) as the attribution template for derivatives and redistributions.
