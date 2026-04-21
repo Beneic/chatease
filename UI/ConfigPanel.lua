@@ -276,10 +276,14 @@ local function CreateLabel(parent, text, fontObject)
     return label
 end
 
-local function CreateWrappedText(parent, fontObject)
+local function CreateWrappedText(parent, fontObject, lineSpacing)
     local label = parent:CreateFontString(nil, "OVERLAY", fontObject or "GameFontHighlight")
     label:SetJustifyH("LEFT")
     label:SetJustifyV("TOP")
+    label:SetWordWrap(true)
+    if type(label.SetSpacing) == "function" then
+        label:SetSpacing(lineSpacing or 0)
+    end
     SetReadableThemeText(label, "class", 0.8, 1)
     return label
 end
@@ -1027,22 +1031,22 @@ function ConfigPanel:Init()
     frame.aboutSection:Hide()
 
     frame.aboutTitle = CreateLabel(frame.aboutSection, "", "GameFontNormalLarge")
-    frame.aboutTitle:SetPoint("TOPLEFT", frame.aboutSection, "TOPLEFT", 18, -16)
-    frame.aboutTitle:SetPoint("RIGHT", frame.aboutSection, "RIGHT", -18, 0)
+    frame.aboutTitle:SetPoint("TOPLEFT", frame.aboutSection, "TOPLEFT", 22, -20)
+    frame.aboutTitle:SetPoint("RIGHT", frame.aboutSection, "RIGHT", -22, 0)
 
-    frame.aboutMeta = CreateWrappedText(frame.aboutSection, "GameFontNormal")
-    frame.aboutMeta:SetPoint("TOPLEFT", frame.aboutTitle, "BOTTOMLEFT", 0, -12)
-    frame.aboutMeta:SetPoint("RIGHT", frame.aboutSection, "RIGHT", -18, 0)
+    frame.aboutMeta = CreateWrappedText(frame.aboutSection, "GameFontNormal", 5)
+    frame.aboutMeta:SetPoint("TOPLEFT", frame.aboutTitle, "BOTTOMLEFT", 0, -16)
+    frame.aboutMeta:SetPoint("RIGHT", frame.aboutSection, "RIGHT", -22, 0)
 
-    frame.aboutBody = CreateWrappedText(frame.aboutSection, "GameFontHighlight")
-    frame.aboutBody:SetPoint("TOPLEFT", frame.aboutMeta, "BOTTOMLEFT", 0, -18)
-    frame.aboutBody:SetPoint("RIGHT", frame.aboutSection, "RIGHT", -18, 0)
+    frame.aboutBody = CreateWrappedText(frame.aboutSection, "GameFontHighlight", 7)
+    frame.aboutBody:SetPoint("TOPLEFT", frame.aboutMeta, "BOTTOMLEFT", 0, -24)
+    frame.aboutBody:SetPoint("RIGHT", frame.aboutSection, "RIGHT", -22, 0)
 
-    frame.aboutFooter = CreateWrappedText(frame.aboutSection, "GameFontDisable")
-    frame.aboutFooter:SetPoint("BOTTOMLEFT", frame.aboutSection, "BOTTOMLEFT", 18, 16)
-    frame.aboutFooter:SetPoint("RIGHT", frame.aboutSection, "RIGHT", -18, 0)
-    frame.aboutBody:SetPoint("BOTTOMLEFT", frame.aboutFooter, "TOPLEFT", 0, 18)
-    frame.aboutBody:SetPoint("BOTTOMRIGHT", frame.aboutFooter, "TOPRIGHT", 0, 18)
+    frame.aboutFooter = CreateWrappedText(frame.aboutSection, "GameFontDisable", 4)
+    frame.aboutFooter:SetPoint("BOTTOMLEFT", frame.aboutSection, "BOTTOMLEFT", 22, 20)
+    frame.aboutFooter:SetPoint("RIGHT", frame.aboutSection, "RIGHT", -22, 0)
+    frame.aboutBody:SetPoint("BOTTOMLEFT", frame.aboutFooter, "TOPLEFT", 0, 26)
+    frame.aboutBody:SetPoint("BOTTOMRIGHT", frame.aboutFooter, "TOPRIGHT", 0, 26)
 
     frame.generalLabel = CreateLabel(frame.generalContent, "", "GameFontNormalLarge")
     frame.generalLabel:SetPoint("TOPLEFT", frame.generalContent, "TOPLEFT", 0, 0)
