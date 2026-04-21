@@ -1,0 +1,24 @@
+## Interface: 120001
+## Title: ChatEase
+## Notes: Fast chat command and template helper for WoW Retail.
+## Author: 布兰卡德-太古龙
+## Version: 0.1.0
+## X-Flavor: Mainline
+## SavedVariables: ChatEaseDB
+## SavedVariablesPerCharacter: ChatEaseCharDB
+## IconTexture: Interface\FriendsFrame\PlusManz-PlusManz
+
+Locales\LoadLocales.xml
+
+DB\Defaults.lua
+Core\Compat.lua
+Core\Theme.lua
+
+Modules\Permission.lua
+Modules\TemplateStore.lua
+Modules\CommandRouter.lua
+
+UI\ChatBar.lua
+UI\ConfigPanel.lua
+
+Core\Init.lua

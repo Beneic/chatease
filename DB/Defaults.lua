@@ -1,0 +1,110 @@
+local _, ns = ...
+
+ns.DB_DEFAULTS = {
+    schemaVersion = 10,
+    showPermissionErrors = true,
+    ui = {
+        mode = "floating",
+        scale = 1,
+        locked = false,
+        floatingAnchor = {
+            point = "CENTER",
+            relativePoint = "CENTER",
+            x = 0,
+            y = 0,
+        },
+        dockedAnchor = {
+            point = "TOPLEFT",
+            relativePoint = "BOTTOMLEFT",
+            x = 0,
+            y = -8,
+        },
+        floatingSize = {
+            width = 430,
+            height = 520,
+        },
+        dockedSize = {
+            width = 340,
+            height = 430,
+        },
+    },
+    chatBar = {
+        enabled = true,
+        locked = false,
+        style = "text",
+        showBackground = false,
+        iconSet = "color",
+        preferredAlias = "s",
+        scale = 1,
+        anchor = {
+            point = "TOPLEFT",
+            relativePoint = "TOPLEFT",
+            x = 0,
+            y = 8,
+            relativeToChatFrame = true,
+        },
+    },
+    templates = {
+        pull = {
+            id = "pull",
+            nameKey = "TEMPLATE_PULL",
+            content = "/pull",
+            defaultChannel = "rw",
+            requirePermission = "rw",
+            category = "raid",
+            enabled = true,
+            kind = "slash",
+            tags = { "raid", "countdown" },
+        },
+        ready = {
+            id = "ready",
+            nameKey = "TEMPLATE_READY",
+            content = "/ready",
+            defaultChannel = "rw",
+            requirePermission = "rw",
+            category = "raid",
+            enabled = true,
+            kind = "slash",
+            tags = { "raid", "ready" },
+        },
+        summon = {
+            id = "summon",
+            nameKey = "TEMPLATE_SUMMON",
+            content = "Need summon at entrance, please.",
+            defaultChannel = "party",
+            category = "general",
+            enabled = true,
+            tags = { "group" },
+        },
+        buff = {
+            id = "buff",
+            nameKey = "TEMPLATE_BUFF",
+            content = "Please buff before pull.",
+            defaultChannel = "raid",
+            category = "raid",
+            enabled = true,
+            tags = { "raid", "prep" },
+        },
+        roll = {
+            id = "roll",
+            nameKey = "TEMPLATE_ROLL",
+            content = "/roll",
+            defaultChannel = "party",
+            category = "general",
+            enabled = true,
+            kind = "slash",
+            tags = { "loot" },
+        },
+    },
+    templateOrder = {
+        "pull",
+        "ready",
+        "summon",
+        "buff",
+        "roll",
+    },
+}
+
+ns.CHAR_DEFAULTS = {
+    templateOverrides = {},
+}
