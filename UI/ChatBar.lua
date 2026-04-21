@@ -101,11 +101,19 @@ local function GetTemplateButtonText(template)
 
     local shortLabel = GetTemplateShortLabel(template and template.id)
     if shortLabel then
+        local shortChar = GetFirstVisibleUtf8Char(shortLabel)
+        if shortChar ~= "" then
+            return shortChar
+        end
         return shortLabel
     end
 
     local fromNameKey = GetTemplateShortLabelFromNameKey(template and template.nameKey)
     if fromNameKey then
+        local nameKeyChar = GetFirstVisibleUtf8Char(fromNameKey)
+        if nameKeyChar ~= "" then
+            return nameKeyChar
+        end
         return fromNameKey
     end
 
