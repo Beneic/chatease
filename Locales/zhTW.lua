@@ -141,4 +141,4 @@ L["ABOUT_VERSION_LABEL"] = "目前版本"
 L["ABOUT_AUTHOR_LABEL"] = "開發者"
 L["ABOUT_NOTES_LABEL"] = "插件說明"
 
-L["WARN_INTERFACE_VERSION"] = "此插件按正式服 Interface 120001（WoW 12.0.1+）開發。"
+L["WARN_INTERFACE_VERSION"] = "此插件按正式服 Interface 120100（WoW 12.1.0+）開發。"

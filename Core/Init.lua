@@ -194,7 +194,7 @@ local function InitializeAddon()
         ns.ChatBar:Init()
     end)
 
-    if not ns.Compat.IsRetail1201OrNewer() then
+    if not ns.Compat.IsRetail121OrNewer() then
         ns.Compat.Print(ns.L["WARN_INTERFACE_VERSION"])
     end
 end

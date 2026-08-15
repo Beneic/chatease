@@ -141,4 +141,4 @@ L["ABOUT_VERSION_LABEL"] = "Версия"
 L["ABOUT_AUTHOR_LABEL"] = "Разработчик"
 L["ABOUT_NOTES_LABEL"] = "Описание аддона"
 
-L["WARN_INTERFACE_VERSION"] = "Аддон разработан под Interface 120001 (WoW 12.0.1+) для актуальной версии игры."
+L["WARN_INTERFACE_VERSION"] = "Аддон разработан под Interface 120100 (WoW 12.1.0+) для актуальной версии игры."

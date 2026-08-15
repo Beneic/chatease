@@ -1,8 +1,8 @@
-## Interface: 120001
+## Interface: 120100
 ## Title: ChatEase
 ## Notes: Fast chat command and template helper for WoW Retail.
 ## Author: 布兰卡德-太古龙
-## Version: 0.1.0
+## Version: 0.1.1
 ## X-Flavor: Mainline
 ## SavedVariables: ChatEaseDB
 ## SavedVariablesPerCharacter: ChatEaseCharDB

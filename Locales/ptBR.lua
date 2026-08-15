@@ -141,4 +141,4 @@ L["ABOUT_VERSION_LABEL"] = "Versão"
 L["ABOUT_AUTHOR_LABEL"] = "Desenvolvedor"
 L["ABOUT_NOTES_LABEL"] = "Notas do addon"
 
-L["WARN_INTERFACE_VERSION"] = "Este addon foi desenvolvido para Retail Interface 120001 (WoW 12.0.1+)."
+L["WARN_INTERFACE_VERSION"] = "Este addon foi desenvolvido para Retail Interface 120100 (WoW 12.1.0+)."

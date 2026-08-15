@@ -2,7 +2,7 @@
 
 ChatEase is a World of Warcraft Retail addon for fast chat routing and template sending.
 
-This project targets Retail API `12.0.1` and uses an original implementation.
+This project targets Retail API `12.1.0` and uses an original implementation.
 
 ## What It Does
 

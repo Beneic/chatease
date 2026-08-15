@@ -141,4 +141,4 @@ L["ABOUT_VERSION_LABEL"] = "버전"
 L["ABOUT_AUTHOR_LABEL"] = "개발자"
 L["ABOUT_NOTES_LABEL"] = "애드온 설명"
 
-L["WARN_INTERFACE_VERSION"] = "이 애드온은 정식 서버 Interface 120001 (WoW 12.0.1+) 기준으로 제작되었습니다."
+L["WARN_INTERFACE_VERSION"] = "이 애드온은 정식 서버 Interface 120100 (WoW 12.1.0+) 기준으로 제작되었습니다."

@@ -21,9 +21,9 @@ deferredFrame:SetScript("OnEvent", function(_, event)
     end
 end)
 
-function Compat.IsRetail1201OrNewer()
+function Compat.IsRetail121OrNewer()
     local _, _, _, interfaceVersion = GetBuildInfo()
-    return (interfaceVersion or 0) >= 120001
+    return (interfaceVersion or 0) >= 120100
 end
 
 function Compat.Trim(value)
